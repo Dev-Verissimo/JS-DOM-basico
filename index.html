@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Syntax sugar 2</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
   </head>
   <button class="doce" onclick="adicionarPensamento()">
     Adicionar pensamento
@@ -25,23 +25,7 @@
     </div>
     <div class="twizzler"></div>
   </div>
-
   <body>
-    <script>
-      function adicionarPensamento() {
-        var pensamento = prompt("Qual o seu pensamento de açucar? ");
-
-        var lista = document.querySelector(".pensamentos");
-
-        lista.innerHTML += `
-          <li onclick="apagarItem(this)">${pensamento}</li>
-        `;
-      }
-
-      function apagarItem(elemento) {
-        // Apagar item
-        elemento.remove();
-      }
-    </script>
+    <script src="js/index.js"></script>
   </body>
 </html>
